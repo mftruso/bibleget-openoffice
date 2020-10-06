@@ -13,6 +13,8 @@ import com.sun.star.registry.XRegistryKey;
 import com.sun.star.uno.Exception;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
+import org.cef.CefApp;
+
 import java.awt.Desktop;
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
@@ -58,7 +60,7 @@ public final class BibleGetIO extends WeakBase
     private static String myLocale;
     private static Locale uiLocale;
     //public ResourceBundle myMessages;
-    
+
     private static BibleGetIO instance;
 
     public BibleGetIO( XComponentContext context )
@@ -70,6 +72,8 @@ public final class BibleGetIO extends WeakBase
         //System.out.println(packagePath);
         
         //myOptionFrame = OptionsFrame.getInstance(packagePath);
+
+        System.out.println(CefApp.getInstance().getVersion().toString());
         
         fontFamilies = getFonts();
         
