@@ -37,7 +37,7 @@ import javax.swing.event.SwingPropertyChangeSupport;
  * A class that encapsulates a Font and provides convenient methods to query or change
  * various attributes.
  * <P>
- * The default model for {@link VisualFontDesigner}.
+ * The default model for VisualFontDesigner.
  *
  * @author Darryl
  */
@@ -117,10 +117,10 @@ public class FontModel {
   }
 
   /**
-   * Generates and returns code that will programatically recreate this model's Font.  Meant for
-   * use by code generrators.
+   * Generates and returns code that will programmatically recreate this model's Font.  Meant for
+   * use by code generators.
    *
-   * @return the code needed to programatically recreate the designed Font.
+   * @return the code needed to programmatically recreate the designed Font.
    */
   public String getCode() {
     final StringBuilder sb = new StringBuilder("Map<TextAttribute, Object>"

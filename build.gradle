@@ -11,6 +11,9 @@ apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'idea'
 
+group 'io.bibleget'
+version '2.8'
+
 repositories {
     mavenLocal()
     mavenCentral()
@@ -30,3 +33,8 @@ dependencies {
 }
 
 //ant.importBuild 'build.xml'
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+}

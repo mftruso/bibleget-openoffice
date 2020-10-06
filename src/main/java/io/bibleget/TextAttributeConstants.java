@@ -50,7 +50,6 @@ import java.util.Map;
  *
  * @see TextAttribute
  * @see FontModel
- * @see VisualFontDesigner
  */
 public class TextAttributeConstants extends HashMap<TextAttribute, Map<Object, String>> {
 
