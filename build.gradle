@@ -30,15 +30,3 @@ dependencies {
 }
 
 //ant.importBuild 'build.xml'
-
-sourceSets {
-    main {
-        java {
-            srcDirs = ['src']
-        }
-//        resources {
-//            srcDirs = ['resource']
-//        }
-        // add tests sources here (this project didn't have them!)
-    }
-}
