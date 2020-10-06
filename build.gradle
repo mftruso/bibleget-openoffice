@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.openoffice:juh:$openOfficeVersion"
+    implementation "org.openoffice:ridl:$openOfficeVersion"
+    implementation "org.openoffice:unoil:$openOfficeVersion"
+    implementation "org.openoffice:jurt:$openOfficeVersion"
+    implementation "org.openoffice:officebean:$openOfficeVersion"
+}
