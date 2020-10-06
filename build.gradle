@@ -22,4 +22,23 @@ dependencies {
     implementation "org.openoffice:unoil:$openOfficeVersion"
     implementation "org.openoffice:jurt:$openOfficeVersion"
     implementation "org.openoffice:officebean:$openOfficeVersion"
+    
+    implementation "javax.json:javax.json-api:1.1.4"
+    implementation "org.apache.commons:commons-lang3:3.11"
+    implementation "org.apache.commons:commons-text:1.9"
+    implementation "com.glazedlists:glazedlists:1.11.0"
+}
+
+//ant.importBuild 'build.xml'
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+//        resources {
+//            srcDirs = ['resource']
+//        }
+        // add tests sources here (this project didn't have them!)
+    }
 }

@@ -11,6 +11,8 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
+
+import org.apache.commons.lang3.CharSet;
 import org.apache.commons.text.WordUtils;
 
 
@@ -293,7 +295,7 @@ public class BibleGetI18N {
      */
     public static String __(String s) {
         try{
-            myResource = ResourceBundle.getBundle("io.bibleget.resources.messages",BibleGetIO.getUILocale(),new io.bibleget.UTF8Control());
+            myResource = ResourceBundle.getBundle("io.bibleget.resources.messages",BibleGetIO.getUILocale());// FIXME missing control new io.bibleget.UTF8Control()
         } catch(MissingResourceException ex){
             myResource = ResourceBundle.getBundle("io.bibleget.resources.messages");
         }
